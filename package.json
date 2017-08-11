@@ -1,0 +1,33 @@
+{
+  "name": "infinite-mailer",
+  "version": "0.1.0",
+  "description": "Email sending module that supports multiple service providers",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test/lib/*.js --no-timeouts",
+    "functional": "./node_modules/mocha/bin/mocha  test/functional/*.js --no-timeouts"
+  },
+  "author": "Tamil Vendhan K",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.5.0",
+    "aws-sdk": "^2.95.0",
+    "debug": "^2.6.8",
+    "handlebars": "^4.0.10",
+    "lodash": "^4.17.4",
+    "mailgun-js": "^0.12.0",
+    "mandrill-api": "^1.0.45",
+    "nodemailer": "^4.0.1",
+    "redis": "^2.8.0",
+    "sendgrid": "^5.2.0"
+  },
+  "devDependencies": {
+    "event-debug": "^1.1.1",
+    "mocha": "^3.5.0",
+    "should": "^11.2.1",
+    "sinon": "^3.1.0"
+  }
+}
